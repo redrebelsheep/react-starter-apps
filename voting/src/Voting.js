@@ -3,11 +3,9 @@ import "./App.css";
 import VotingItem from "./VotingItem";
 
 class Voting extends Component {
-
-
   render() {
     return (
-      <div>
+      <body>
         <nav class="navbar navbar-light bg-light">
           <span class="navbar-brand mb-0 h1">Widget App Marian Kowall</span>
         </nav>
@@ -25,7 +23,7 @@ class Voting extends Component {
             <span class="badge badge-primary badge-pill">1</span>
           </li>
         </ul>
-      </div>
+      </body>
     );
   }
 }

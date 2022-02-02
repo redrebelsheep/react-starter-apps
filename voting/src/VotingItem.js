@@ -13,11 +13,17 @@ class VoteItem extends Component {
 
   render() {
     return (
-      <div>
-        {this.state.counterNumber} {this.props.name}
+      <div className="languages">
+        <div className="voteCount">
+        {this.state.counterNumber} 
+        </div>
+        <div className="language">
+        {this.props.name}
+        </div>
         <button type="button" class="btn btn-primary btn-sm" onClick={this.startCounting}>
           Vote
         </button>
+      
       </div>
     );
   }
