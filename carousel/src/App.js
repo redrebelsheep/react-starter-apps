@@ -1,12 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import Carsl from './Carsl'
 
 
 function App() {
   return (
+    <div style={{textAlign: 'center'}}>
     <div className="App">
        <Carsl />
+    </div>
     </div>
   );
 }

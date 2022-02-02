@@ -1,4 +1,7 @@
-import React,{Component} from 'react';
+import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {Picture} from './component/Picture'
 import './App.css';
  
 
@@ -21,10 +24,18 @@ let styles = {
 
   */
 
+
 const Carsl = () => {
 	return (
 		<div style={styles}>
-			 Welcome to the Carousel..
+			 Welcome to the Carouse
+       <Carousel infiniteLoop useKeyboardArrows autoPlay>
+      {Picture.map(p => (
+        <div>
+        <img src={p.link} alt={p.name}/>
+        </div>
+        ))}
+      </Carousel>
 		</div>
 	  )
 }
